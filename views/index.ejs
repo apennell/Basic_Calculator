@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <title><Calculator</title>
+</head>
+<body>
+    <h1>Annie's Hella Basic Calculator</h1>
+
+    <h3>Addition</h3>
+    <form action="/add" method="post">
+        <input type="text" name="number1" placeholder="number"> +
+        <input type="text" name="number2" placeholder="number">
+        <button type="submit">Add!</button>
+    </form>
+    <br>
+    <div>Sum: <%= solutionA %> </div>
+    <br>
+    <h3>Subtraction</h3>
+    <form action="/sub" method="post">
+        <input type="text" name="number3" placeholder="number"> -
+        <input type="text" name="number4" placeholder="number">
+        <button type="submit">Subtract!</button>
+    </form>
+    <br>
+    <div>Difference: <%= solutionS %> </div>
+    <br>
+    <h3>Multiplication</h3>
+    <form action="/mult" method="post">
+        <input type="text" name="number5" placeholder="number"> *
+        <input type="text" name="number6" placeholder="number">
+        <button type="submit">Multiply!</button>
+    </form>
+     <br>
+    <div>Product: <%= solutionM %> </div>
+    <br>
+    <h3>Division</h3>
+    <form action="/div" method="post">
+        <input type="text" name="number7" placeholder="number"> /
+        <input type="text" name="number8" placeholder="number">
+        <button type="submit">Divide!</button>
+    </form>
+    <br>
+    <div>Quotient: <%= solutionD %> </div>
+</body>
+</html>
